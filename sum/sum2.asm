@@ -3,9 +3,7 @@ section .text
 
 	_start:
         mov ecx, [num1]
-        sub ecx, '0'
         mov edx, [num2]
-        sub edx, '0'
         add ecx, edx
         add ecx, '0'
 
@@ -24,8 +22,8 @@ section .text
 
 
 section .data
-    num1        db '2'
-    num2        db '3'
+    num1        db 2
+    num2        db 3
 
 section .bss
     sum         resb 1
