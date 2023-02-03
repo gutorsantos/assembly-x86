@@ -16,6 +16,12 @@ section .text
 		mov edx, 100                                ; max num of bytes to be read
 		int 0x80                                    ; make the interruption
 
+		mov eax, 4
+        mov ebx, 1
+        mov ecx, x
+        mov edx, 1
+        int 0x80
+
         ; close file
         mov ebx, eax							    ; eax return the file descriptor that is the arg for ebx
 		mov eax, 6									; syscall to close
@@ -26,6 +32,9 @@ section .text
         mov ebx, file2    						    ; write to stdout
         mov ecx, 744o                               ; permission
 		int 0x80									; make the interruption
+
+
+        
 
         ; close file
         mov ebx, eax							    ; eax return the file descriptor that is the arg for ebx
