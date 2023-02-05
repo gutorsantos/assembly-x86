@@ -29,6 +29,3 @@ section .data
     file	db 'files/file2.txt',0
     hello   db 'Hello, World!'
     len     equ $ - hello
-
-section .bss
-    char    resb 1
