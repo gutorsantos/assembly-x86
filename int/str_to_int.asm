@@ -74,7 +74,7 @@ section .text
         ret
 
 section .data
-    num     db '20754',0
+    num     db '-20754',0
 
 section .bss
     char    resb 1

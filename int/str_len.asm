@@ -43,7 +43,7 @@ section .text
         ret                                         ; return
 
 section .data
-    num     db '0123456789',0
+    num     db '012345678',0
 
 section .bss
     char    resb 1
